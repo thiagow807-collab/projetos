@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lanches preparados na hora, ingredientes frescos e muito sabor. Confira nosso cardápio e peça pelo WhatsApp.">
+  <meta name="theme-color" content="#17120f">
+  <title>Brasa & Pão | Lanches feitos com carinho</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="topline">🍔 Feito na hora, do nosso jeito — peça e receba quentinho!</div>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Brasa e Pão, início">
+      <span class="brand-mark">B<span>&</span>P</span>
+      <span class="brand-name">BRASA <b>&</b> PÃO<small>LANCHES ARTESANAIS</small></span>
+    </a>
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <nav class="main-nav" aria-label="Navegação principal">
+      <a href="#inicio">Início</a><a href="#cardapio">Cardápio</a><a href="#sobre">Nossa história</a><a href="#contato">Contato</a>
+    </nav>
+    <a class="header-order" href="#cardapio">Peça agora <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <span class="eyebrow"><i></i> O sabor que dá vontade de repetir</span>
+        <h1>Seu momento merece um <em>lanche de verdade.</em></h1>
+        <p>Pão macio, ingredientes fresquinhos e aquele sabor preparado com carinho. Escolha seu favorito e deixe o resto com a gente.</p>
+        <div class="hero-actions"><a class="btn btn-primary" href="#cardapio">Ver nosso cardápio <span>→</span></a><a class="text-link" href="#sobre">Conheça a casa <span>↗</span></a></div>
+        <div class="hero-proof"><div class="proof-avatars"><span>🍔</span><span>🍟</span><span>🥤</span></div><div><strong>Feito na hora</strong><small>Qualidade em cada mordida</small></div></div>
+      </div>
+      <div class="hero-art" aria-label="Ilustração de hambúrguer artesanal" role="img">
+        <div class="art-glow"></div><div class="art-stamp">FEITO<br>COM AMOR <span>♥</span></div>
+        <div class="burger"><div class="bun-top"><span class="sesame s1"></span><span class="sesame s2"></span><span class="sesame s3"></span><span class="sesame s4"></span><span class="sesame s5"></span></div><div class="lettuce"></div><div class="cheese"></div><div class="patty"></div><div class="onion"></div><div class="bun-bottom"></div></div>
+        <div class="floating-note">★ <b>Uma explosão</b><br>de sabor!</div>
+      </div>
+      <div class="hero-bottom"><span>01 / 03</span><span class="hero-line"></span><span>MATOU A FOME? A GENTE RESOLVE.</span></div>
+    </section>
+
+    <section class="benefits">
+      <div><span class="benefit-icon">🥬</span><span><b>Ingredientes frescos</b><small>Selecionados todos os dias</small></span></div>
+      <div><span class="benefit-icon">🔥</span><span><b>Preparado na hora</b><small>Sempre quentinho e saboroso</small></span></div>
+      <div><span class="benefit-icon">🛵</span><span><b>Entrega com carinho</b><small>Receba no conforto de casa</small></span></div>
+    </section>
+
+    <section class="menu-section section-wrap" id="cardapio">
+      <div class="section-heading"><div><span class="eyebrow"><i></i> ESCOLHA O SEU FAVORITO</span><h2>Nosso <em>cardápio</em></h2></div><p>Tem aquele clássico que nunca falha<br>e combinações para surpreender.</p></div>
+      <div class="filter-row" role="group" aria-label="Filtrar cardápio">
+        <button class="filter-btn active" data-filter="todos">Todos</button><button class="filter-btn" data-filter="hamburguer">Hambúrgueres</button><button class="filter-btn" data-filter="acompanhamento">Acompanhamentos</button><button class="filter-btn" data-filter="bebida">Bebidas</button>
+      </div>
+      <div class="product-grid" id="product-grid">
+        <article class="product-card" data-category="hamburguer"><div class="product-image image-one"><span class="product-emoji">🍔</span><span class="product-tag">MAIS PEDIDO</span></div><div class="product-info"><div class="product-title"><h3>Brasa Clássico</h3><strong>R$ 24,90</strong></div><p>Hambúrguer artesanal, queijo cheddar, alface, tomate e molho da casa.</p><button class="add-button" data-product="Brasa Clássico" data-price="24.90">Adicionar ao pedido <span>+</span></button></div></article>
+        <article class="product-card" data-category="hamburguer"><div class="product-image image-two"><span class="product-emoji">🍔</span><span class="product-tag">ESPECIAL DA CASA</span></div><div class="product-info"><div class="product-title"><h3>Duplo Bacon</h3><strong>R$ 32,90</strong></div><p>Dois burgers suculentos, queijo, bacon crocante e molho barbecue.</p><button class="add-button" data-product="Duplo Bacon" data-price="32.90">Adicionar ao pedido <span>+</span></button></div></article>
+        <article class="product-card" data-category="hamburguer"><div class="product-image image-three"><span class="product-emoji">🥪</span></div><div class="product-info"><div class="product-title"><h3>Frango Crocante</h3><strong>R$ 26,90</strong></div><p>Frango empanado crocante, queijo, salada fresca e maionese temperada.</p><button class="add-button" data-product="Frango Crocante" data-price="26.90">Adicionar ao pedido <span>+</span></button></div></article>
+        <article class="product-card" data-category="acompanhamento"><div class="product-image image-four"><span class="product-emoji">🍟</span></div><div class="product-info"><div class="product-title"><h3>Batata da Casa</h3><strong>R$ 16,90</strong></div><p>Porção de batatas douradas e crocantes com nosso tempero especial.</p><button class="add-button" data-product="Batata da Casa" data-price="16.90">Adicionar ao pedido <span>+</span></button></div></article>
+        <article class="product-card" data-category="acompanhamento"><div class="product-image image-five"><span class="product-emoji">🧀</span></div><div class="product-info"><div class="product-title"><h3>Batata com Cheddar</h3><strong>R$ 21,90</strong></div><p>Batatas crocantes cobertas com cheddar cremoso e bacon.</p><button class="add-button" data-product="Batata com Cheddar" data-price="21.90">Adicionar ao pedido <span>+</span></button></div></article>
+        <article class="product-card" data-category="bebida"><div class="product-image image-six"><span class="product-emoji">🥤</span></div><div class="product-info"><div class="product-title"><h3>Refrigerante Lata</h3><strong>R$ 6,00</strong></div><p>Escolha seu sabor favorito. Geladinho para acompanhar seu lanche.</p><button class="add-button" data-product="Refrigerante Lata" data-price="6.00">Adicionar ao pedido <span>+</span></button></div></article>
+      </div>
+      <div class="cart-bar" id="cart-bar" hidden><div><b id="cart-count">0 itens</b><small id="cart-total">Total: R$ 0,00</small></div><button class="btn btn-primary" id="checkout-button">Finalizar pelo WhatsApp ↗</button></div>
+      <p class="menu-disclaimer">* Cardápio e valores ilustrativos. Edite os produtos e preços conforme sua lanchonete.</p>
+    </section>
+
+    <section class="story-section" id="sobre"><div class="story-visual"><div class="story-circle">DESDE<br><b>2024</b><br>♥</div><div class="story-emoji">👨‍🍳</div><span class="story-caption">Sabor de verdade, feito com carinho.</span></div><div class="story-copy"><span class="eyebrow"><i></i> MAIS QUE UM LANCHE</span><h2>Feito com carinho.<br><em>Servido com sabor.</em></h2><p>Acreditamos que comida boa aproxima pessoas. Por isso, cada pedido é preparado com atenção, ingredientes selecionados e aquele cuidado que faz toda a diferença.</p><p>Chegue com fome e saia com vontade de voltar!</p><a class="btn btn-dark" href="#cardapio">Quero experimentar <span>→</span></a></div></section>
+
+    <section class="cta-section" id="contato"><span class="eyebrow"><i></i> BATEU AQUELA FOME?</span><h2>Seu próximo lanche<br>favorito está <em>aqui.</em></h2><p>Faça seu pedido sem complicação. A gente prepara tudo fresquinho!</p><a class="btn btn-primary" id="contact-whatsapp" href="#">Pedir pelo WhatsApp ↗</a><small>Atendimento e pedidos pelo WhatsApp</small></section>
+  </main>
+
+  <footer class="site-footer"><a class="brand footer-brand" href="#inicio"><span class="brand-mark">B<span>&</span>P</span><span class="brand-name">BRASA <b>&</b> PÃO<small>LANCHES ARTESANAIS</small></span></a><p>Feito na hora. Feito com carinho.</p><span>© <span id="year"></span> Brasa & Pão. Todos os direitos reservados.</span></footer>
+</body>
+</html>
